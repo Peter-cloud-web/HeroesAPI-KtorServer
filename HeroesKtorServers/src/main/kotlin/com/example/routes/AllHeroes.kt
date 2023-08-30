@@ -23,11 +23,11 @@ fun Route.getAllHeroes() {
                 message = ApiResponse(success = false, message = "Only numbers allowed"),
                 status = HttpStatusCode.BadRequest
             )
-        } catch (e:IllegalArgumentException){
+        } catch (e: IllegalArgumentException) {
 
             call.respond(
                 message = ApiResponse(success = false, message = "Heroes not found"),
-                status = HttpStatusCode.BadRequest
+                status = HttpStatusCode.NotFound
             )
         }
 

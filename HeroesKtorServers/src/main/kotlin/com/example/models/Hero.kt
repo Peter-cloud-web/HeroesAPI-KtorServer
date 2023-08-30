@@ -9,7 +9,7 @@ data class Hero(
     val image:String,
     val about:String,
     val rating:Double,
-    val power:String,
+    val power:Int,
     val month:String,
     val day:String,
     val family:List<String>,
